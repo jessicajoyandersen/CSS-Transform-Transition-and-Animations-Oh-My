@@ -28,7 +28,9 @@ nav {
 }
 /* must "rotate" so that 
 it goes from top-left
-to bottom right { ￣ --> \ } */
+to bottom right { ￣ 
+                      --> 
+                            \ } */
 @keyframes top {    
   from {transform: rotate(0deg) translate(0px);}
   to {transform: rotate(45deg) translate(22px, 22px);}             
@@ -43,8 +45,12 @@ to bottom right { ￣ --> \ } */
 }                  
 /* must "rotate" so that */
 /* it goes from bottom left */
-/* to top right { __ --> / } */
+/* to top right           / }
+                    -->
+              { __           */
 @keyframes bottom { 
   from {transform: rotate(0deg) translate(0px);}           
   to {transform: rotate(-45deg) translate(25px,-25px);}             
 }
+
+/* rotate comes before translate? */

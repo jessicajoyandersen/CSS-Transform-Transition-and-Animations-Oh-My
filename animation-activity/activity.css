@@ -26,18 +26,25 @@ nav {
 .hamburger:hover ~ nav {
   opacity: 1;
 }
-
-@keyframes top {
-  from {}
-  to {}
+/* must "rotate" so that 
+it goes from top-left
+to bottom right { ￣ --> \ } */
+@keyframes top {    
+  from {transform: rotate(0deg) translate(0px);}
+  to {transform: rotate(45deg) translate(22px, 22px);}             
 }
-
-@keyframes middle {
-  from {}
-  to {}
-}
-
-@keyframes bottom {
-  from {}
-  to {}
+/* must "disappear" */
+/* - transform: scale(0) worked */
+/* for final animation stage */
+/* of sale-bar on last animation practice */
+@keyframes middle {                
+  from {opacity: 1;}
+  to {opacity: 0;} 
+}                  
+/* must "rotate" so that */
+/* it goes from bottom left */
+/* to top right { __ --> / } */
+@keyframes bottom { 
+  from {transform: rotate(0deg) translate(0px);}           
+  to {transform: rotate(-45deg) translate(25px,-25px);}             
 }
